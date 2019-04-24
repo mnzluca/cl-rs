@@ -3,7 +3,7 @@
 This code is a fast reaction systems simulator. It is written in Common Lisp and it has been tested using SBCL.
 The main function is 
 ```lisp
-(defun simulate-rs (filename simulator &optional out)
+(defun simulate-rs (filename simulator &optional out))
 ```
 where `filename` is the file containing the description of the reaction system (we use the same format as  [HERESY](https://github.com/aresio/HERESY)), `simulator` is the function used to perform the simulation, can be either `#'simulator-set-theory` or `#'simulator-dependency-graph`. The optional paramter `out` is a filename used to save the output of the simulation (defaulting to the standard output).
 
